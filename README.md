@@ -1,8 +1,8 @@
 
-#Calico's External Firewall Controller 
+# Calico's External Firewall Controller 
 
 
-##Problem statement
+## Problem statement
 Project Calico has a lot of security features to manage traffic rules from/to nodes and PODs on clusters. This is performed by Felix agent running on nodes witch is responsible to insert control plane rules on linux kernel (routes, netilter tables rules, etc.). However this rules are tipically restricted to cluster itself, where Felix is running. Despite the high level of confidence on Linux kernel security features it is common sense that the closer to the edge you stop suspicious traffic is better. Is not a bad idea to have two layer of filtering too.
 
 It's usual on companies to have a border firewall that helps on information security tasks, with a single tool access all control lists. Checkpoint, Cisco, Fortinet, Palo Alto are just few examples of firm selling this kind of equipment. Security rules in this appliances are tipically a list of IP address (source and destination) where services are allowed or denied to flow. It's a very commom to have this equipment carrying out of network address translation services and intrusion prevention system features too. 
@@ -33,13 +33,13 @@ For (3)
 Obviously this solution is far from ideal. Too much work to manage this rules and IPPools; also we may have a big IP address waste (and IPv4 public address are now precious).
 
 
-##Solution
+## Solution
 
 
 
-##Configure options
+## Configure options
 
-##Feature in bullets
+## Feature in bullets
 
 
 ##Contribution
