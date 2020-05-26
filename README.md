@@ -1,5 +1,5 @@
 
-# Calico's External Firewall Controller 
+# Calico's External Firewall Controller - Proposal
 
 
 ## Problem statement
@@ -90,7 +90,7 @@ Besides solving the issues previously discussed is also possible to minimize the
 
 ## Contribution
 We appreciate your opinion. Please fell free to share ideas about this proposal. Will help a lot, specially if you have an easy way to solve these problems.
-For now thanks to Shaun and Robson for the tips on Calico's slack channel.
+For now thanks to Shaun and Robson for the tips and ideas on Calico's slack channel.
 
 
 ```
