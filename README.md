@@ -11,7 +11,7 @@ These firewalls are built over a traditional network foundation, where services 
 
 However we may face problems to handle rules on border firewall when is required to:
 
-1. filter the egress traffic from pods to a specific group of destination adresses and services; 
+1. filter the egress traffic from pods to a specific group of destination addresses and services; 
 2. create outbound NAT rules to a set of pods witch is allowed to egress and haven't public IP addresses available on cluster;
 3. create outbound NAT rules to a set of pods witch need to be SNATed to specific address to access external services (destination have source IP firewall filter)
 
