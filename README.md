@@ -25,8 +25,12 @@ For (2) and (3):
  - Pretty like (1). Create static NAT rules on firewall to a set of IP addresses, assigned them to IP Pool and manage on Calico what POD should receive this static IP address range.
 
 
-
 Obviously this solution is far from ideal. Too much work to manage this rules and IPPools (one IPPool to each src/dst/service rule); also we may have a big IP address waste allocating source addresses ranges (and IPv4 public address are now precious).
+
+
+Note 1: Calico's entreprise version seems to allow pods be SNATed by namespace to different fixed IPv4 addresses. So, all above problems can be solved with static rules on border firewall (one source address to each service), it's a very cool feature. However, we still face (1) when running on IPv6. Despite NAT is possible on IPv6, don't seem too much elegant solution.
+
+Note 2: Above discussion only make sense if you have pods routeable on your network, not performing NAT on cluster itself (masquerade). If you have NAT on ingress/egress cluster traffic your border firewall is "blind" about PODs IP addresses - you can't rule on it.
 
 
 ## Solution
