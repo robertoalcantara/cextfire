@@ -42,7 +42,7 @@ At Calico side (Felix), the proposed component (cextfire) is attached as externa
 
 Besides solving the issues previously discussed is also possible to minimize the number of static rules on firewall even for ingress cluster traffic, enforcing an consistent state between cluster network policies and external firewall database.
 
-
+```
                        +-------+             +---------------+                             +---------------------+                +-----------+
                        | Felix |             | Cextfire_main |                             | Cextfire_connector  |                | Firewall  |
                        +-------+             +---------------+                             +---------------------+                +-----------+
@@ -76,6 +76,7 @@ Besides solving the issues previously discussed is also possible to minimize the
                            |                         |                                                |-------------------------------->|
                            |                         |                                                |                                 |
 
+```
 
 [1] https://github.com/projectcalico/felix/blob/master/proto/doc.go
 
@@ -104,4 +105,4 @@ note right of Cextfire_connector: database rules
 Cextfire_connector->Cextfire_connector: translate to Firewall API
 Cextfire_connector->Firewall: apply rules subset
 
-```
+``
