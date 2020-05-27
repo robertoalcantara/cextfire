@@ -84,8 +84,9 @@ Besides solving the issues previously discussed is also possible to minimize the
 
 ## Configure options
 - firewall rules prefix
-- firewall NAT rules -- we need to check how to embedded this info on network policy.
-- to be defined
+- firewall NAT rules -- we need to check how to embed this info on network policy with minimal (zero?) changes.
+- exception networks -- net cidrs cextife should ignore from rules -- need also to check best way to configure it.
+- to be defined 
 
 
 ## Contribution
